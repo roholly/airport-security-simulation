@@ -53,11 +53,9 @@ An exploratory run at λ=50 (a busier airport) suggests approximately 36 agents 
 
 ## What This Demonstrates
 
-- Discrete-event simulation design with warm-up period and steady-state analysis
-- Systematic configuration testing across 36 server combinations
-- Statistical distribution validation before drawing conclusions
-- Identifying system bottlenecks and the point of diminishing returns
-- Translating simulation results into a concrete operational recommendation
+Everyone has stood in an airport security line wondering why it takes this long. This project puts a number on it: with arrival rates of 5 passengers per minute, it takes exactly 4 ID checkers and 4 screening lanes to keep average wait times under 15 minutes. Fewer than that and queues grow without bound. More than that and the returns diminish quickly.
+
+The interesting part is that Stage 1 is the bottleneck regardless of how many screening lanes you add. You can have 6 screening lanes and 1 ID checker and the line still backs up. The simulation makes that visible across all 36 configurations tested.
 
 ---
 
